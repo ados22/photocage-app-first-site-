@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Mali|Muli|Open+Sans+Condensed:300|Poppins&display=swap');
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .main {
 	width: 1280px;
 	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
 .header {
@@ -17,20 +25,11 @@
 	border-radius: 5px;
 }
 
-.main, .logo, .menubar, .site_content, .footer {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-.logo h1 {
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
 	font-family: 'Lobster', sans-serif;
 	display: flex;
 	align-items: center;
-	transform: translateY(20px);
-}
-
-.logo_text h1, .logo_text h1 a, logo_text h1 a:hover {
+	transform: translateY(4px);
 	display: block;
 	font-size: 1.8em;
 	color: #676666;
@@ -84,8 +83,7 @@
 .gall:hover {
 	transition: 0.2s;
 	background: linear-gradient(180deg, #ffffff, #CCC7BA);
-	border-bottom: solid 4px #ff7700;	
-	
+	border-bottom: solid 4px #ff7700;		
 }
 
 .home {
@@ -147,17 +145,12 @@
 	transform: translateY(-480px);
 	height: 110px;
 	border-bottom: solid 4px #cccccc;
-	
 }
 
 .log:hover {
 	transition: 0.2s;
 	background: linear-gradient(180deg, #ffffff, #CCC7BA);
 	border-bottom: solid 4px #ff7700;	
-}
-
-.site_content{
-	background-color: #fff;
 }
 
 .sidebar {
@@ -197,16 +190,16 @@
 	margin-left: 40%;
 	border: solid 3px white;
 	box-shadow: inset -18px 0 10px -20px #333, 
-                 inset 18px 0 10px -20px #333,
-                 inset 0 -18px 10px -20px #333, 
-                 inset 0 18px 10px -20px #333;
+                inset 18px 0 10px -20px #333,
+                inset 0 -18px 10px -20px #333, 
+                inset 0 18px 10px -20px #333;
 }
 
 #file-upload:hover {
 	box-shadow: inset -18px 0 20px -20px #333, 
-                 inset 18px 0 20px -20px #333,
-                 inset 0 -18px 20px -20px #333, 
-                 inset 0 18px 20px -20px #333;
+                inset 18px 0 20px -20px #333,
+                inset 0 -18px 20px -20px #333, 
+                inset 0 18px 20px -20px #333;
 }
 
 .content {
@@ -230,7 +223,6 @@
 	margin-bottom: 20px;
 	margin-top: 20px;
 	box-shadow: inset 0 -18px 20px -20px #cccccc;
-  
 }
 
 .content img {
@@ -247,6 +239,7 @@
 	font-family: 'Muli', sans-serif;
 	font-size: 90%;
 }
+
 .png_up img {
 	display: flex;
 	align-items: center;
@@ -255,7 +248,6 @@
 	width: 22px;
 	height: 22px;
 	margin-left: 16px;
-
 }
 
 .png_down img {
@@ -281,20 +273,16 @@
 	width: 95%;
 }
 
-
 .footer {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 15px 0 15px 0;
 	display: flex;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	padding: 15px 0 15px 0;
 	background: linear-gradient(180deg, #e1e1e1, #ffffff);
 	color: #a8aa94;
-	margin-left: 0px;
-	margin-right: 0px;
-	min-width: 1280px;
+	max-width: 1280px;
 	margin-bottom: 0px;
 	transform: translateY(10px);
 	border-radius: 3px;
